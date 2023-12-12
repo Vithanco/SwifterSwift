@@ -18,13 +18,13 @@ public extension UserDefaults {
         }
     }
 
-    /// SwifterSwift: Float from UserDefaults.
-    ///
-    /// - Parameter key: key to find float for.
-    /// - Returns: Float object for key (if exists).
-    func float(forKey key: String) -> Float? {
-        return object(forKey: key) as? Float
-    }
+//    /// SwifterSwift: Float from UserDefaults.
+//    ///
+//    /// - Parameter key: key to find float for.
+//    /// - Returns: Float object for key (if exists).
+//    func float(forKey key: String) -> Float? {
+//        return object(forKey: key) as? Float
+//    }
 
     /// SwifterSwift: Date from UserDefaults.
     ///

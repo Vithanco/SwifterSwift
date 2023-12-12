@@ -42,7 +42,7 @@ final class FutureExtensionsTests: XCTestCase {
         let expect = expectation(description: "testInitAsyncThrows")
 
         cancellable = Just(100)
-            .setFailureType(to: (any Error).self)
+            .setFailureType(to: any Error.self)
             .flatMap { [weak self] value in
                 Future<Int, any Error> {
                     try await self?.doSomethingThrows(value: value, shouldThrow: true) ?? 0
@@ -51,7 +51,7 @@ final class FutureExtensionsTests: XCTestCase {
             .catch { error in
                 XCTAssertEqual(error as? FutureExtensionsTestsError, FutureExtensionsTestsError.error)
                 return Just(200)
-                    .setFailureType(to: (any Error).self)
+                    .setFailureType(to: any Error.self)
             }
             .sink(receiveCompletion: { _ in
 
