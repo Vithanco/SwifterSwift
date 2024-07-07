@@ -1,4 +1,4 @@
-// SequenceExtensionsTests.swift - Copyright 2023 SwifterSwift
+// SequenceExtensionsTests.swift - Copyright 2024 SwifterSwift
 
 @testable import SwifterSwift
 import XCTest
@@ -112,6 +112,20 @@ final class SequenceExtensionsTests: XCTestCase {
         XCTAssert([1, 2, 3].contains([2, 3]))
         XCTAssert([1, 2, 3].contains([1, 3]))
         XCTAssertFalse([1, 2, 3].contains([4, 5]))
+
+        XCTAssert([Int]().contains(AnyIterator { nil }))
+        XCTAssertFalse([Int]().contains(AnyIterator([1, 2].makeIterator())))
+        XCTAssert([1, 2, 3].contains(AnyIterator([1, 2].makeIterator())))
+        XCTAssert([1, 2, 3].contains(AnyIterator([2, 3].makeIterator())))
+        XCTAssert([1, 2, 3].contains(AnyIterator([1, 3].makeIterator())))
+        XCTAssertFalse([1, 2, 3].contains(AnyIterator([4, 5].makeIterator())))
+
+        XCTAssert([Int]().contains(Set<Int>()))
+        XCTAssertFalse([Int]().contains(Set([1, 2])))
+        XCTAssert([1, 2, 3].contains(Set([1, 2])))
+        XCTAssert([1, 2, 3].contains(Set([2, 3])))
+        XCTAssert([1, 2, 3].contains(Set([1, 3])))
+        XCTAssertFalse([1, 2, 3].contains(Set([4, 5])))
     }
 
     func testContainsDuplicates() {
@@ -135,6 +149,21 @@ final class SequenceExtensionsTests: XCTestCase {
         XCTAssertEqual(["a", "b", "c", "d"].sum(for: \.count), 4)
     }
 
+    func testMapFunctionSum() {
+        XCTAssertEqual(["James", "Wade", "Bryant"].sum(for: { $0.count }), 15)
+        XCTAssertEqual(["a", "b", "c", "d"].sum(for: { $0.count }), 4)
+    }
+
+    func testProduct() {
+        XCTAssertEqual([1, 2, 3, 4, 5].product(), 120)
+        XCTAssertEqual([1.2, 2.3, 3.4, 4.5, 5.6].product(), 236.4768, accuracy: 0.001)
+    }
+
+    func testMapFunctionProduct() {
+        XCTAssertEqual(["James", "Wade", "Bryant"].product(for: \.count), 120)
+        XCTAssertEqual(["a", "b", "c", "d"].product(for: \.count), 1)
+    }
+
     func testKeyPathSorted() {
         let array = ["James", "Wade", "Bryant"]
         XCTAssertEqual(array.sorted(by: \String.count, with: <), ["Wade", "James", "Bryant"])
@@ -144,6 +173,24 @@ final class SequenceExtensionsTests: XCTestCase {
         XCTAssertEqual(array.sorted(by: \String.count), ["Wade", "James", "Bryant"])
 
         // Testing optional keyPath
+        let optionalCompare = { (char1: Character?, char2: Character?) -> Bool in
+            guard let char1 = char1, let char2 = char2 else { return false }
+            return char1 < char2
+        }
+
+        let array2 = ["James", "Wade", "Bryant", ""]
+        XCTAssertEqual(array2.sorted(by: \String.first, with: optionalCompare), ["Bryant", "James", "Wade", ""])
+    }
+
+    func testMapFunctionSorted() {
+        let array = ["James", "Wade", "Bryant"]
+        XCTAssertEqual(array.sorted(by: { $0.count }, with: <), ["Wade", "James", "Bryant"])
+        XCTAssertEqual(array.sorted(by: { $0.count }, with: >), ["Bryant", "James", "Wade"])
+
+        // Comparable version
+        XCTAssertEqual(array.sorted(by: { $0.count }), ["Wade", "James", "Bryant"])
+
+        // Testing optional map function
         let optionalCompare = { (char1: Character?, char2: Character?) -> Bool in
             guard let char1 = char1, let char2 = char2 else { return false }
             return char1 < char2
@@ -167,6 +214,20 @@ final class SequenceExtensionsTests: XCTestCase {
         XCTAssertEqual(people.sorted(by: \.surname, and: \.age), expectedResult)
     }
 
+    func testSortedByTwoMapFunctions() {
+        let people = [
+            SimplePerson(forename: "Tom", surname: "James", age: 32),
+            SimplePerson(forename: "Angeline", surname: "Wade", age: 57),
+            SimplePerson(forename: "Max", surname: "James", age: 34)
+        ]
+        let expectedResult = [
+            SimplePerson(forename: "Tom", surname: "James", age: 32),
+            SimplePerson(forename: "Max", surname: "James", age: 34),
+            SimplePerson(forename: "Angeline", surname: "Wade", age: 57)
+        ]
+        XCTAssertEqual(people.sorted(by: { $0.surname }, and: { $0.age }), expectedResult)
+    }
+
     func testSortedByThreeKeyPaths() {
         let people = [
             SimplePerson(forename: "Tom", surname: "James", age: 32),
@@ -183,6 +244,22 @@ final class SequenceExtensionsTests: XCTestCase {
         XCTAssertEqual(people.sorted(by: \.surname, and: \.forename, and: \.age), expectedResult)
     }
 
+    func testSortedByThreeMapFunctions() {
+        let people = [
+            SimplePerson(forename: "Tom", surname: "James", age: 32),
+            SimplePerson(forename: "Angeline", surname: "Wade", age: 57),
+            SimplePerson(forename: "Max", surname: "James", age: 34),
+            SimplePerson(forename: "Angeline", surname: "Wade", age: 82)
+        ]
+        let expectedResult = [
+            SimplePerson(forename: "Max", surname: "James", age: 34),
+            SimplePerson(forename: "Tom", surname: "James", age: 32),
+            SimplePerson(forename: "Angeline", surname: "Wade", age: 57),
+            SimplePerson(forename: "Angeline", surname: "Wade", age: 82)
+        ]
+        XCTAssertEqual(people.sorted(by: { $0.surname }, and: { $0.forename }, and: { $0.age }), expectedResult)
+    }
+
     func testFirstByKeyPath() {
         let array1 = [
             Person(name: "John", age: 30, location: Location(city: "Boston")),
@@ -195,6 +272,22 @@ final class SequenceExtensionsTests: XCTestCase {
         XCTAssertEqual(first30Age, array1.first)
 
         let missingPerson = array1.first(where: \.name, equals: "Tom")
+
+        XCTAssertNil(missingPerson)
+    }
+
+    func testFirstByMapFunction() {
+        let array1 = [
+            Person(name: "John", age: 30, location: Location(city: "Boston")),
+            Person(name: "Jan", age: 22, location: nil),
+            Person(name: "Roman", age: 30, location: Location(city: "Moscow"))
+        ]
+
+        let first30Age = array1.first(where: { $0.age }, equals: 30)
+
+        XCTAssertEqual(first30Age, array1.first)
+
+        let missingPerson = array1.first(where: { $0.name }, equals: "Tom")
 
         XCTAssertNil(missingPerson)
     }

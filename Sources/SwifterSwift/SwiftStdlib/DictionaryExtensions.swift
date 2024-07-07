@@ -1,4 +1,4 @@
-// DictionaryExtensions.swift - Copyright 2023 SwifterSwift
+// DictionaryExtensions.swift - Copyright 2024 SwifterSwift
 
 #if canImport(Foundation)
 import Foundation
@@ -92,7 +92,7 @@ public extension Dictionary {
         let options = (prettify == true) ? JSONSerialization.WritingOptions.prettyPrinted : JSONSerialization
             .WritingOptions()
         guard let jsonData = try? JSONSerialization.data(withJSONObject: self, options: options) else { return nil }
-        return String(data: jsonData, encoding: .utf8)
+        return String(decoding: jsonData, as: UTF8.self)
     }
     #endif
 

@@ -1,4 +1,4 @@
-// URLSessionExtensionsTests.swift - Copyright 2023 SwifterSwift
+// URLSessionExtensionsTests.swift - Copyright 2024 SwifterSwift
 
 @testable import SwifterSwift
 import XCTest
@@ -27,7 +27,7 @@ final class URLSessionExtensionsTests: XCTestCase {
         XCTAssertNotNil(data)
         XCTAssertNotNil(response)
         let httpResponse = response as? HTTPURLResponse
-        let content = String(data: data!, encoding: .utf8)
+        let content = String(decoding: data!, as: UTF8.self)
         XCTAssertEqual(content, gemfileContent)
         XCTAssertNotNil(httpResponse)
         XCTAssertEqual(httpResponse!.statusCode, 200)

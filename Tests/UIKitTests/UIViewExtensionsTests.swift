@@ -1,4 +1,4 @@
-// UIViewExtensionsTests.swift - Copyright 2023 SwifterSwift
+// UIViewExtensionsTests.swift - Copyright 2024 SwifterSwift
 
 @testable import SwifterSwift
 import XCTest
@@ -87,6 +87,14 @@ final class UIViewExtensionsTests: XCTestCase {
         shape.path = maskPath.cgPath
         XCTAssertEqual(view.layer.mask?.bounds, shape.bounds)
         XCTAssertEqual(view.layer.mask?.cornerRadius, shape.cornerRadius)
+    }
+
+    func testMakeCircle() {
+        let view = UIView()
+        view.makeCircle(diameter: 100)
+        XCTAssertEqual(view.frame.size.width, 100)
+        XCTAssertEqual(view.frame.size.height, 100)
+        XCTAssertEqual(view.layer.cornerRadius, 50)
     }
 
     func testShadowColor() {
@@ -207,6 +215,18 @@ final class UIViewExtensionsTests: XCTestCase {
 
         view.addSubviews([UIView(), UIView()])
         XCTAssertEqual(view.subviews.count, 2)
+    }
+
+    func testBlur() {
+        let imageView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 100))
+        imageView.blur(withStyle: .dark)
+
+        let blurView = imageView.subviews.first as? UIVisualEffectView
+        XCTAssertNotNil(blurView)
+        XCTAssertNotNil(blurView?.effect)
+        XCTAssertEqual(blurView?.frame, imageView.bounds)
+        XCTAssertEqual(blurView?.autoresizingMask, [.flexibleWidth, .flexibleHeight])
+        XCTAssert(imageView.clipsToBounds)
     }
 
     func testFadeIn() {
@@ -648,6 +668,17 @@ final class UIViewExtensionsTests: XCTestCase {
 
         // simple empty case test
         XCTAssertNil(container.widthConstraint)
+    }
+
+    func testRemoveBlur() {
+        let view = UIView()
+        let blurEffect = UIBlurEffect(style: .prominent)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.bounds
+        view.addSubview(blurEffectView)
+        XCTAssert(view.subviews.first is UIVisualEffectView)
+        view.removeBlur()
+        XCTAssertFalse(view.subviews.first is UIVisualEffectView)
     }
 }
 

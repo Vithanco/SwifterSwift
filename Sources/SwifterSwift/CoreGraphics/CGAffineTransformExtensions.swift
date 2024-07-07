@@ -1,9 +1,9 @@
-// CGAffineTransformExtensions.swift - Copyright 2023 SwifterSwift
+// CGAffineTransformExtensions.swift - Copyright 2024 SwifterSwift
 
 #if canImport(CoreGraphics)
 import CoreGraphics
 
-#if canImport(QuartzCore)
+#if canImport(QuartzCore) && !os(watchOS)
 
 import QuartzCore
 

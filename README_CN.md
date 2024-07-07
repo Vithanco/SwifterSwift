@@ -150,6 +150,7 @@ let package = Package(
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/DateExtensions.swift"><code>Date extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/blob/master/Sources/SwifterSwift/Foundation/FileManagerExtensions.swift"><code>FileManager extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/LocaleExtensions.swift"><code>Locale extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/MeasurementExtensions.swift"><code>Measurement extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/NSAttributedStringExtensions.swift"><code>NSAttributedString extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/NSPredicateExtensions.swift"><code>NSPredicate extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Foundation/URLExtensions.swift"><code>URL extensions</code></a></li>
@@ -203,9 +204,10 @@ let package = Package(
 <summary>AppKit 扩展</summary>
 </br>
 <ul>
-<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Shared/ColorExtensions.swift"><code>NSColor extensions</code></a></li>
-<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/AppKit/NSViewExtensions.swift"><code>NSView extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/Shared/NSColorExtensions.swift"><code>NSColor extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/AppKit/NSImageExtensions.swift"><code>NSImage extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/AppKit/NSStackViewExtensions.swift"><code>NSStackView extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/SwifterSwift/AppKit/NSViewExtensions.swift"><code>NSView extensions</code></a></li>
 </ul>
 </details>
 

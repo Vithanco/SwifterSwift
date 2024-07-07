@@ -556,6 +556,7 @@
 		9E28344F25AEBD160093203B /* MeasurementExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E28344C25AEBD160093203B /* MeasurementExtensionsTests.swift */; };
 		9E3CA2672ABE0D7100FA4626 /* FutureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CA2662ABE0D7100FA4626 /* FutureExtensions.swift */; };
 		9E3CA3772ABE103E00FA4626 /* FutureExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CA3752ABE0FEE00FA4626 /* FutureExtensionsTests.swift */; };
+		9E8C72392BB8CE5900866521 /* NSStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8C72382BB8CE5800866521 /* NSStackViewExtensions.swift */; };
 		9E9F42B129872E9400A0BD60 /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F42B029872E9300A0BD60 /* URLSessionExtensions.swift */; };
 		9E9F42B229872E9400A0BD60 /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F42B029872E9300A0BD60 /* URLSessionExtensions.swift */; };
 		9E9F42B329872E9400A0BD60 /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F42B029872E9300A0BD60 /* URLSessionExtensions.swift */; };
@@ -568,6 +569,7 @@
 		9EA118122ABF2FED00AD3916 /* FutureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CA2662ABE0D7100FA4626 /* FutureExtensions.swift */; };
 		9EA118132ABF2FFE00AD3916 /* FutureExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CA3752ABE0FEE00FA4626 /* FutureExtensionsTests.swift */; };
 		9EA118142ABF2FFF00AD3916 /* FutureExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CA3752ABE0FEE00FA4626 /* FutureExtensionsTests.swift */; };
+		9ECEAE692BB8D19500DFBBDD /* NSStackViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECEAE682BB8D19400DFBBDD /* NSStackViewExtensionsTests.swift */; };
 		A94AA78720280F9100E229A5 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AA78620280F9100E229A5 /* FileManagerExtensions.swift */; };
 		A94AA78A202819B400E229A5 /* FileManagerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AA7882028193A00E229A5 /* FileManagerExtensionsTests.swift */; };
 		A94AA78B202819B400E229A5 /* FileManagerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AA7882028193A00E229A5 /* FileManagerExtensionsTests.swift */; };
@@ -672,6 +674,9 @@
 		F8A710F123BF3F8600112DAD /* EdgeInsetsExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A710ED23BF3F8200112DAD /* EdgeInsetsExtensionsTests.swift */; };
 		F8B4DFB3291EA77C0011BD90 /* HKActivitySummaryExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEBCE224B0079700F61684 /* HKActivitySummaryExtensionsTests.swift */; };
 		F8B4DFB4291EA7880011BD90 /* HKActivitySummaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEBCDF24B0045F00F61684 /* HKActivitySummaryExtensions.swift */; };
+		F8BE7E082B3B161F00179B35 /* UIImageViewDeprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE7E072B3B161F00179B35 /* UIImageViewDeprecated.swift */; };
+		F8BE7E092B3B161F00179B35 /* UIImageViewDeprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE7E072B3B161F00179B35 /* UIImageViewDeprecated.swift */; };
+		F8BE7E0A2B3B161F00179B35 /* UIImageViewDeprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE7E072B3B161F00179B35 /* UIImageViewDeprecated.swift */; };
 		F8C1AE6F225B7F990045D5A0 /* NSRegularExpressionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1AE6E225B7F990045D5A0 /* NSRegularExpressionExtensions.swift */; };
 		F8C1AE70225B7F990045D5A0 /* NSRegularExpressionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1AE6E225B7F990045D5A0 /* NSRegularExpressionExtensions.swift */; };
 		F8C1AE71225B7F990045D5A0 /* NSRegularExpressionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C1AE6E225B7F990045D5A0 /* NSRegularExpressionExtensions.swift */; };
@@ -910,8 +915,10 @@
 		9E28344C25AEBD160093203B /* MeasurementExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementExtensionsTests.swift; sourceTree = "<group>"; };
 		9E3CA2662ABE0D7100FA4626 /* FutureExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureExtensions.swift; sourceTree = "<group>"; };
 		9E3CA3752ABE0FEE00FA4626 /* FutureExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FutureExtensionsTests.swift; sourceTree = "<group>"; };
+		9E8C72382BB8CE5800866521 /* NSStackViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStackViewExtensions.swift; sourceTree = "<group>"; };
 		9E9F42B029872E9300A0BD60 /* URLSessionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionExtensions.swift; sourceTree = "<group>"; };
 		9E9F42B529872F5F00A0BD60 /* URLSessionExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionExtensionsTests.swift; sourceTree = "<group>"; };
+		9ECEAE682BB8D19400DFBBDD /* NSStackViewExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStackViewExtensionsTests.swift; sourceTree = "<group>"; };
 		A94AA78620280F9100E229A5 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		A94AA7882028193A00E229A5 /* FileManagerExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensionsTests.swift; sourceTree = "<group>"; };
 		B22EB2B620E9E720001EAE70 /* RangeReplaceableCollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeReplaceableCollectionExtensions.swift; sourceTree = "<group>"; };
@@ -947,6 +954,7 @@
 		F88C491824AF73A400BA0503 /* TestStoryboard-tvOS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "TestStoryboard-tvOS.storyboard"; sourceTree = "<group>"; };
 		F8A710E823BF3EF100112DAD /* EdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		F8A710ED23BF3F8200112DAD /* EdgeInsetsExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetsExtensionsTests.swift; sourceTree = "<group>"; };
+		F8BE7E072B3B161F00179B35 /* UIImageViewDeprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewDeprecated.swift; sourceTree = "<group>"; };
 		F8C1AE6E225B7F990045D5A0 /* NSRegularExpressionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpressionExtensions.swift; sourceTree = "<group>"; };
 		F8C1AE73225B871F0045D5A0 /* NSRegularExpressionExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpressionExtensionsTests.swift; sourceTree = "<group>"; };
 		F8E62DA324D0187000BF35AE /* XCTestExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestExtensionsTests.swift; sourceTree = "<group>"; };
@@ -1144,8 +1152,9 @@
 			isa = PBXGroup;
 			children = (
 				9DC844A42349E24600E1571A /* NSColorExtensions.swift */,
-				07B7F1641F5EB41600E6F910 /* NSViewExtensions.swift */,
 				278CA08C1F9A9232004918BD /* NSImageExtensions.swift */,
+				9E8C72382BB8CE5800866521 /* NSStackViewExtensions.swift */,
+				07B7F1641F5EB41600E6F910 /* NSViewExtensions.swift */,
 			);
 			path = AppKit;
 			sourceTree = "<group>";
@@ -1174,6 +1183,7 @@
 		07B7F1791F5EB41600E6F910 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F8BE7E062B3B161F00179B35 /* Deprecated */,
 				07B7F17C1F5EB41600E6F910 /* UIAlertControllerExtensions.swift */,
 				07A1C446224FFDE4003272E4 /* UIApplicationExtensions.swift */,
 				07B7F17D1F5EB41600E6F910 /* UIBarButtonItemExtensions.swift */,
@@ -1301,6 +1311,7 @@
 			children = (
 				5C88FBEB234CC1280065A942 /* NSColorExtensionsTests.swift */,
 				278CA0901F9A9679004918BD /* NSImageExtensionsTests.swift */,
+				9ECEAE682BB8D19400DFBBDD /* NSStackViewExtensionsTests.swift */,
 				07C50D2A1F5EB03200F46E5A /* NSViewExtensionsTests.swift */,
 			);
 			path = AppKitTests;
@@ -1599,6 +1610,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		F8BE7E062B3B161F00179B35 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				F8BE7E072B3B161F00179B35 /* UIImageViewDeprecated.swift */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
 		F8E62DA224D0184E00BF35AE /* XCTestTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1801,7 +1820,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1600;
 				ORGANIZATIONNAME = SwifterSwift;
 				TargetAttributes = {
 					07898B5C1F278D7600558C97 = {
@@ -2081,7 +2100,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then     \n        swiftformat $SRCROOT\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
+			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then     \n        swiftformat \"$SRCROOT\"\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
 		};
 		E455DFD52AD0CC17008A011E /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2100,7 +2119,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat $SRCROOT\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
+			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat \"$SRCROOT\"\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
 		};
 		E455DFD62AD0CC23008A011E /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2119,7 +2138,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat $SRCROOT\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
+			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat \"$SRCROOT\"\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
 		};
 		E455DFD72AD0CC2F008A011E /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2138,7 +2157,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat $SRCROOT\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
+			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat \"$SRCROOT\"\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
 		};
 		E455DFD82AD0CC39008A011E /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2157,7 +2176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat $SRCROOT\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
+			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat \"$SRCROOT\"\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
 		};
 		E455DFD92AD0CC46008A011E /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2176,7 +2195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat $SRCROOT\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
+			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then      \n        swiftformat \"$SRCROOT\"\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
 		};
 		E455DFDA2AD0CC57008A011E /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2195,7 +2214,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then\n        swiftformat $SRCROOT\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
+			shellScript = "if [[ ${TRAVIS} == \"\" ]]; then\n    if [[ \"$(uname -m)\" == arm64 ]]; then\n        export PATH=\"/opt/homebrew/bin:$PATH\"\n    fi\n\n    if which swiftformat >/dev/null; then\n        swiftformat \"$SRCROOT\"\n    else\n        echo \"warning: SwiftFormat is not installed\"\n    fi\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2245,6 +2264,7 @@
 				664CB96D2171863B00FC87B4 /* BidirectionalCollectionExtensions.swift in Sources */,
 				07B7F1951F5EB42000E6F910 /* UICollectionViewExtensions.swift in Sources */,
 				07B7F1A31F5EB42000E6F910 /* UITableViewExtensions.swift in Sources */,
+				F8BE7E082B3B161F00179B35 /* UIImageViewDeprecated.swift in Sources */,
 				17A4B79326CCFFAE007D299F /* SKSpriteNodeExtensions.swift in Sources */,
 				077BA08F1F6BE83600D9C4AC /* UserDefaultsExtensions.swift in Sources */,
 				07B7F1A11F5EB42000E6F910 /* UISwitchExtensions.swift in Sources */,
@@ -2375,6 +2395,7 @@
 				734308082108E4630029CD16 /* CGVectorExtensions.swift in Sources */,
 				F8DED22624EAA2070068F758 /* UIScrollViewExtensions.swift in Sources */,
 				07B7F1BC1F5EB42000E6F910 /* UIViewControllerExtensions.swift in Sources */,
+				F8BE7E092B3B161F00179B35 /* UIImageViewDeprecated.swift in Sources */,
 				58CAE62A28CF2935001935A2 /* DefaultStringInterpolationExtensions.swift in Sources */,
 				F8A710EA23BF3F7300112DAD /* EdgeInsetsExtensions.swift in Sources */,
 				07B7F2371F5EB45200E6F910 /* CGSizeExtensions.swift in Sources */,
@@ -2465,6 +2486,7 @@
 				D951E8AC23D04DCA00F2CD0B /* DecodableExtensions.swift in Sources */,
 				9D806A882258F624008E500A /* SCNGeometryExtensions.swift in Sources */,
 				07B7F1CC1F5EB42200E6F910 /* UIStoryboardExtensions.swift in Sources */,
+				F8BE7E0A2B3B161F00179B35 /* UIImageViewDeprecated.swift in Sources */,
 				9D806A6C2258DC3E008E500A /* SCNShapeExtensions.swift in Sources */,
 				07B7F1C61F5EB42200E6F910 /* UINavigationBarExtensions.swift in Sources */,
 				F87AA5D724125808005F5B28 /* NotificationCenterExtensions.swift in Sources */,
@@ -2541,6 +2563,7 @@
 				9E9F42B429872E9400A0BD60 /* URLSessionExtensions.swift in Sources */,
 				07B7F2231F5EB44600E6F910 /* CGSizeExtensions.swift in Sources */,
 				664CB9792171899800FC87B4 /* BinaryFloatingPointExtensions.swift in Sources */,
+				9E8C72392BB8CE5900866521 /* NSStackViewExtensions.swift in Sources */,
 				9D806A632258D503008E500A /* SCNPlaneExtensions.swift in Sources */,
 				07B7F1E11F5EB43B00E6F910 /* OptionalExtensions.swift in Sources */,
 				9D9784DE1FCAE42600D988E7 /* StringProtocolExtensions.swift in Sources */,
@@ -2848,6 +2871,7 @@
 				9E28344F25AEBD160093203B /* MeasurementExtensionsTests.swift in Sources */,
 				07C50D851F5EB05800F46E5A /* NSAttributedStringExtensionsTests.swift in Sources */,
 				9E9F42BC298733E000A0BD60 /* URLSessionExtensionsTests.swift in Sources */,
+				9ECEAE692BB8D19500DFBBDD /* NSStackViewExtensionsTests.swift in Sources */,
 				07C50D7C1F5EB05100F46E5A /* IntExtensionsTests.swift in Sources */,
 				F8B4DFB3291EA77C0011BD90 /* HKActivitySummaryExtensionsTests.swift in Sources */,
 				F8C1AE76225B871F0045D5A0 /* NSRegularExpressionExtensionsTests.swift in Sources */,
@@ -3069,7 +3093,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.2.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3081,7 +3105,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3146,7 +3169,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.2.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3157,7 +3180,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3229,7 +3251,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.2.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3241,7 +3263,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3306,7 +3327,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.2.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3317,7 +3338,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3390,7 +3410,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.2.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3402,7 +3422,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3468,7 +3487,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.2.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3479,7 +3498,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3548,13 +3566,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.2.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3566,7 +3583,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -3627,13 +3643,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0.0;
+				MARKETING_VERSION = 6.2.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3644,7 +3659,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -3653,7 +3667,6 @@
 		07C50CD11F5EAF2700F46E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -3716,7 +3729,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3724,7 +3736,6 @@
 		07C50CD21F5EAF2700F46E5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -3780,7 +3791,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3789,7 +3799,6 @@
 		07C50CE11F5EAF4B00F46E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -3839,7 +3848,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3853,7 +3861,6 @@
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -3861,7 +3868,6 @@
 		07C50CE21F5EAF4B00F46E5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -3905,7 +3911,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3918,7 +3923,6 @@
 				SDKROOT = appletvos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3927,7 +3931,6 @@
 		07C50CF01F5EAF6300F46E5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -3978,7 +3981,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -3992,14 +3994,12 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		07C50CF11F5EAF6300F46E5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -4044,7 +4044,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -4057,7 +4056,6 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

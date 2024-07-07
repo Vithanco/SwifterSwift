@@ -1,4 +1,4 @@
-// CAGradientLayerExtensions.swift - Copyright 2023 SwifterSwift
+// CAGradientLayerExtensions.swift - Copyright 2024 SwifterSwift
 
 #if !os(watchOS) && !os(Linux) && canImport(QuartzCore)
 import QuartzCore
@@ -19,6 +19,7 @@ public extension CAGradientLayer {
     ///   - endPoint: end point corresponds to the last gradient stop
     ///   - type: The kind of gradient that will be drawn. Currently, the only allowed values are `axial' (the default
     /// value), `radial', and `conic'.
+    @available(macOS 10.14, *)
     convenience init(colors: [SFColor],
                      locations: [CGFloat]? = nil,
                      startPoint: CGPoint = CGPoint(x: 0.5, y: 0),

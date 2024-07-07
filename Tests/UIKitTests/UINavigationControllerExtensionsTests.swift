@@ -1,4 +1,4 @@
-// UINavigationControllerExtensionsTests.swift - Copyright 2023 SwifterSwift
+// UINavigationControllerExtensionsTests.swift - Copyright 2024 SwifterSwift
 
 @testable import SwifterSwift
 import XCTest
@@ -10,8 +10,6 @@ final class UINavigationControllerExtensionsTests: XCTestCase {
     func testPushViewController() {
         let navigationController = UINavigationController()
         let vcToPush = UIViewController()
-
-        navigationController.pushViewController(vcToPush, animated: false)
 
         let exp = expectation(description: "pushCallback")
 
@@ -30,7 +28,7 @@ final class UINavigationControllerExtensionsTests: XCTestCase {
         navigationController.pushViewController(vcToPush, animated: false)
         XCTAssertEqual(navigationController.viewControllers.count, 2)
 
-        let exp = expectation(description: "pushCallback")
+        let exp = expectation(description: "popCallback")
         navigationController.popViewController(animated: false) {
             XCTAssertEqual(navigationController.viewControllers.count, 1)
             XCTAssertEqual(navigationController.topViewController, rootVC)

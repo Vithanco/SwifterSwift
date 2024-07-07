@@ -3,9 +3,62 @@
 The changelog for **SwifterSwift**. Also see the [releases](https://github.com/SwifterSwift/SwifterSwift/releases) on GitHub.
 
 ## Upcoming Release
+### Added
 
 ### Fixed
-- `UIView.GradientDirection` initializer and constants had access level `internal` instead of `public`. [#1152](https://github.com/SwifterSwift/SwifterSwift/pull/1152) by [guykogus](https://github.com/guykogus)
+- **Xcode 16**
+  - Fixed compilation errors, warnings and tests. [#1197](https://github.com/SwifterSwift/SwifterSwift/pull/1197) by [guykogus](https://github.com/guykogus)
+
+### Removed
+- **CAGradientLayer**
+  - Marked `init(colors:locations:startPoint:endPoint:type:)` as available for `(macOS 10.14, *)`. [#1197](https://github.com/SwifterSwift/SwifterSwift/pull/1197) by [guykogus](https://github.com/guykogus)
+- **CGAffineTransform**
+  - Marked `transform3D()` as unavailable for watchOS. [#1197](https://github.com/SwifterSwift/SwifterSwift/pull/1197) by [guykogus](https://github.com/guykogus)
+
+## [v6.2.0](https://github.com/SwifterSwift/SwifterSwift/releases/tag/6.2.0)
+### Added
+- **NSView**
+  - Added `addArrangedSubviews(_ views: )` to add an array of views to the end of the arrangedSubviews array. [#1181](https://github.com/SwifterSwift/SwifterSwift/pull/1181) by [Roman Podymov](https://github.com/RomanPodymov)
+  - Added `removeArrangedSubviews` to remove all views in stack’s array of arranged subviews. [#1181](https://github.com/SwifterSwift/SwifterSwift/pull/1181) by [Roman Podymov](https://github.com/RomanPodymov)
+- **Sequence**
+    - `sorted(by:)`, `sorted(by:with:)`, `sorted(by:and:)`, `sorted(by:and:and:)`, `sum(for:)`, `first(where:equals:)` now have alternatives that receive functions as parameters. This change maintains compatibility with KeyPath while making the methods more flexible. [#1170](https://github.com/SwifterSwift/SwifterSwift/pull/1170) by [MartonioJunior](https://github.com/MartonioJunior)
+
+### Changed
+- **Sequence**
+  - `sorted(by:)`, `sorted(by:with:)`, `sorted(by:and:)`, `sorted(by:and:and:)`, `sum(for:)`, `first(where:equals:)` now have alternatives that receive functions as parameters. This change maintains compatibility with KeyPath while making the methods more flexible. [#1170](https://github.com/SwifterSwift/SwifterSwift/pull/1170) by [MartonioJunior](https://github.com/MartonioJunior)
+  - `contains(_:)` for `Element: Hashable` now can receive any type that conforms to `Sequence`, not just an `Array`. [#1169](https://github.com/SwifterSwift/SwifterSwift/pull/1169) by [MartonioJunior](https://github.com/MartonioJunior)
+
+### Fixed
+- **PrivacyInfo.xcprivacy**
+  - XCode Generate Privacy Report: `Missing an expected key: 'NSPrivacyCollectedDataTypes'`. [#1182](https://github.com/SwifterSwift/SwifterSwift/issues/1182) by [Phil](https://github.com/cdoky)
+
+## [v6.1.1](https://github.com/SwifterSwift/SwifterSwift/releases/tag/6.1.1)
+### Added
+- **Cocoapods**
+  - Added the privacy manifest to Cocoapods. [#1178](https://github.com/SwifterSwift/SwifterSwift/pull/1178) by [guykogus](https://github.com/guykogus)
+
+## [v6.1.0](https://github.com/SwifterSwift/SwifterSwift/releases/tag/6.1.0)
+### Deprecated
+- **UIImageView**
+  - `blurred(withStyle:)` should have copied the image view and blurred the new instance, but instead it performed the same functionality as `blur(withStyle:)`, making the outcome unexpected as well as being obsolete. [#1161](https://github.com/SwifterSwift/SwifterSwift/pull/1161) by [guykogus](https://github.com/guykogus)
+
+### Added
+- **Swift Package Manager**
+  - Added a privacy manifest to comply with Apple's requirements regarding [Describing use of required reason API](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api). [#1176](https://github.com/SwifterSwift/SwifterSwift/pull/1176) by [guykogus](https://github.com/guykogus)
+- **Measurement**
+  - Added `+=`, `-=`, `*=`, `/=` to add, subtract, multiply and divide measurements. [#1162](https://github.com/SwifterSwift/SwifterSwift/pull/1162) by [Roman Podymov](https://github.com/RomanPodymov)
+- **Sequence**
+  - Added `product()` for calculating the product of all `Numeric` elements. [#1168](https://github.com/SwifterSwift/SwifterSwift/pull/1168) by [MartonioJunior](https://github.com/MartonioJunior)
+  - Added `product(for:)` for calculating the product of the `Numeric` property for all elements in `Sequence`. [#1168](https://github.com/SwifterSwift/SwifterSwift/pull/1168) by [MartonioJunior](https://github.com/MartonioJunior)
+- **UIView**
+  - Added `removeBlur()` method for removing the applied blur effect from the view. [#1159](https://github.com/SwifterSwift/SwifterSwift/pull/1159) by [regi93](https://github.com/regi93)
+  - Added `makeCircle(diameter:)` method to make the view circular. [#1165](https://github.com/SwifterSwift/SwifterSwift/pull/1165) by [happyduck-git](https://github.com/happyduck-git)
+
+### Fixed
+- **UIImageView**
+  - Moved `blur(withStyle:)` from `UIImageView` to `UIView`, as it can be performed on all views. [#1161](https://github.com/SwifterSwift/SwifterSwift/pull/1161) by [guykogus](https://github.com/guykogus)
+- **UIView**
+  - `GradientDirection` initializer and constants had access level `internal` instead of `public`. [#1152](https://github.com/SwifterSwift/SwifterSwift/pull/1152) by [guykogus](https://github.com/guykogus)
 
 ## [v6.0.0](https://github.com/SwifterSwift/SwifterSwift/releases/tag/6.0.0)
 ### Breaking Change

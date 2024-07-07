@@ -1,11 +1,13 @@
-// EdgeInsetsExtensions.swift - Copyright 2023 SwifterSwift
+// EdgeInsetsExtensions.swift - Copyright 2024 SwifterSwift
 
 #if os(visionOS) || os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
+
 /// SwifterSwift: EdgeInsets
 public typealias SFEdgeInsets = UIEdgeInsets
 #elseif os(macOS)
 import Foundation
+
 /// SwifterSwift: EdgeInsets
 public typealias SFEdgeInsets = NSEdgeInsets
 
@@ -15,7 +17,7 @@ public extension NSEdgeInsets {
 }
 
 // swiftlint:disable missing_swifterswift_prefix
-extension NSEdgeInsets: Equatable {
+extension NSEdgeInsets: Swift.Equatable {
     /// Returns a Boolean value indicating whether two values are equal.
     ///
     /// Equality is the inverse of inequality. For any values `a` and `b`,

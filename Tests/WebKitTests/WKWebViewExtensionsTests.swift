@@ -1,4 +1,4 @@
-// WKWebViewExtensionsTests.swift - Copyright 2023 SwifterSwift
+// WKWebViewExtensionsTests.swift - Copyright 2024 SwifterSwift
 
 @testable import SwifterSwift
 import XCTest
@@ -58,7 +58,7 @@ final class WKWebViewExtensionsTests: XCTestCase {
     }
 }
 
-class WebViewSuccessExpectation: XCTestExpectation, WKNavigationDelegate {
+class WebViewSuccessExpectation: XCTestExpectation, WKNavigationDelegate, @unchecked Sendable {
     init(description: String, webView: WKWebView) {
         super.init(description: description)
         webView.navigationDelegate = self
@@ -69,7 +69,7 @@ class WebViewSuccessExpectation: XCTestExpectation, WKNavigationDelegate {
     }
 }
 
-class WebViewFailureExpectation: XCTestExpectation, WKNavigationDelegate {
+class WebViewFailureExpectation: XCTestExpectation, WKNavigationDelegate, @unchecked Sendable {
     init(description: String, webView: WKWebView) {
         super.init(description: description)
         webView.navigationDelegate = self
